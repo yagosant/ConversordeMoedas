@@ -5,29 +5,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="8dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/qual_o_valor_em_real" />
+        android:text="@string/qual_o_valor_em_real"
+        android:textSize="25sp"
+        android:gravity="center"/>
 
     <EditText
         android:id="@+id/editValor"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
+        android:textAlignment="center"
         android:text="" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="@string/valor_em_dolar"
     />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
         android:text="@string/valor_em_dolar"
         android:id="@+id/textDolar"
         />
@@ -36,18 +44,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/valor_em_euro"
+        android:layout_marginTop="50dp"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
         android:text="@string/valor_em_euro"
         android:id="@+id/textEuro"
+        android:textColor="@color/colorAccent"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/calcular"
         android:id="@+id/btnCalculate"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorLight"
+        android:layout_marginTop="50dp"
         />
 
 

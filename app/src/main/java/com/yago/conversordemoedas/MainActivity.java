@@ -50,7 +50,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
              Toast.makeText(this, R.string.msg_erro_valor, Toast.LENGTH_LONG).show();
          }else{
             Double real = Double.valueOf(value);
-
+            this.mViewHolder.textDolar.setText(String.format("%,2f",(real/ 5.25)));
+            this.mViewHolder.textEuro.setText(String.format("%,2f",(real/ 5.70)));
          }
      }
     }
